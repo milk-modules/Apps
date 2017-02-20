@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DemoApp01</string>
+    <string name="left">&#60;&#60;--</string>
+    <string name="right">--&#62;&#62;</string>
+</resources>

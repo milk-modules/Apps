@@ -1,0 +1,49 @@
+Colorblind converter: http://www.vischeck.com/vischeck/vischeckImage.php
+Color codes: http://www.rapidtables.com/web/color/
+Color picker: http://imagecolorpicker.net/
+
+
+Green
+Normal:#00FF00
+Deuteranope:#DAC22E
+---
+Orange
+Normal:#FFA500
+Deuteranope:#DAC200
+---
+Red
+Normal:#FF0000
+Deuteranope:#AA9400
+---
+Blue
+Normal:#0000FF
+Deuteranope:#014EFE
+
+
+------------------------------------------
+------------------------------------------
+
+http://mkweb.bcgsc.ca/colorblind/  
+(http://mkweb.bcgsc.ca/colorblind/img/colorblindness.palettes.trivial.png)
+color palette for color blindness
+
+Sky Blue
+Normal:#5CB4E4
+Deuteranope:#8BA1D3
+---
+Black
+Normal:#000000
+Deuteranope:#020202
+---
+Yellow
+Normal:#F1E545
+Deuteranope:#F7DF43
+---
+Bluish Green
+Normal:#069F73
+Deuteranope:#7E7D78
+
+
+
+
+
