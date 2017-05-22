@@ -47,7 +47,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="60dp"
                 android:layout_marginStart="60dp"
-                android:layout_marginTop="72dp"
+                android:layout_marginTop="20dp"
                 android:text="Name"
                 android:textSize="12sp" />
 
@@ -55,10 +55,9 @@
                 android:id="@+id/textView19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/textView14"
-                android:layout_marginTop="19dp"
                 android:layout_alignLeft="@+id/textView14"
                 android:layout_alignStart="@+id/textView14"
+                android:layout_below="@+id/editText10"
                 android:text="Email"
                 android:textSize="12sp" />
 
@@ -66,10 +65,9 @@
                 android:id="@+id/textView20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/textView14"
-                android:layout_alignStart="@+id/textView14"
-                android:layout_below="@+id/textView19"
-                android:layout_marginTop="19dp"
+                android:layout_alignLeft="@+id/textView19"
+                android:layout_alignStart="@+id/textView19"
+                android:layout_below="@+id/editText11"
                 android:text="Password"
                 android:textSize="12sp" />
 
@@ -78,14 +76,13 @@
                 style="@style/Widget.AppCompat.Button.Small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/button7"
-                android:layout_alignBottom="@+id/button7"
-                android:layout_toEndOf="@+id/button7"
-                android:layout_toRightOf="@+id/button7"
                 android:minHeight="30dp"
                 android:minWidth="0dp"
                 android:text="Reset"
-                android:textSize="10sp" />
+                android:textSize="10sp"
+                android:layout_below="@+id/editText12"
+                android:layout_toRightOf="@+id/button7"
+                android:layout_toEndOf="@+id/button7" />
 
             <Button
                 android:id="@+id/button6"
@@ -106,14 +103,14 @@
                 style="@style/Widget.AppCompat.Button.Small"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/textView20"
-                android:layout_alignStart="@+id/textView20"
-                android:layout_below="@+id/textView20"
-                android:layout_marginTop="11dp"
                 android:minHeight="30dp"
                 android:minWidth="0dp"
                 android:text="Back"
-                android:textSize="10sp" />
+                android:textSize="10sp"
+                android:layout_alignBaseline="@+id/button5"
+                android:layout_alignBottom="@+id/button5"
+                android:layout_alignLeft="@+id/textView20"
+                android:layout_alignStart="@+id/textView20" />
 
             <EditText
                 android:id="@+id/editText10"
@@ -125,31 +122,32 @@
                 android:layout_alignStart="@+id/editText11"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:textSize="12sp" />
+                android:textSize="10sp" />
 
             <EditText
                 android:id="@+id/editText11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView19"
+                android:layout_alignBottom="@+id/textView19"
+                android:layout_alignLeft="@+id/editText12"
+                android:layout_alignStart="@+id/editText12"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:textSize="12sp"
-                android:layout_below="@+id/editText10"
-                android:layout_alignLeft="@+id/editText12"
-                android:layout_alignStart="@+id/editText12" />
+                android:textSize="10sp" />
 
             <EditText
                 android:id="@+id/editText12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/textView19"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"
+                android:layout_toEndOf="@+id/textView20"
+                android:layout_toRightOf="@+id/textView20"
                 android:ems="10"
                 android:inputType="textPassword"
-                android:textSize="12sp"
-                android:layout_below="@+id/editText11"
-                android:layout_toRightOf="@+id/textView20"
-                android:layout_toEndOf="@+id/textView20"
-                android:layout_marginLeft="19dp"
-                android:layout_marginStart="19dp" />
+                android:textSize="10sp" />
 
         </RelativeLayout>
 
