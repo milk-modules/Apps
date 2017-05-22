@@ -1,5 +1,4 @@
 package edu.rit.se.demoapp02;
-
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.graphics.Color;
@@ -18,6 +17,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity implements CircleEventListener {
+
 
     RelativeLayout layoutCircle;
     Button buttonStart;
