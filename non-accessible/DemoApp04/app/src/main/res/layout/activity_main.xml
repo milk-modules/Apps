@@ -58,7 +58,7 @@
                 android:layout_alignLeft="@+id/textView14"
                 android:layout_alignStart="@+id/textView14"
                 android:layout_below="@+id/editText10"
-                android:text="Email"
+                android:text="Username"
                 android:textSize="12sp" />
 
             <TextView
@@ -71,46 +71,6 @@
                 android:text="Password"
                 android:textSize="12sp" />
 
-            <Button
-                android:id="@+id/button5"
-                style="@style/Widget.AppCompat.Button.Small"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:minHeight="30dp"
-                android:minWidth="0dp"
-                android:text="Reset"
-                android:textSize="10sp"
-                android:layout_below="@+id/editText12"
-                android:layout_toRightOf="@+id/button7"
-                android:layout_toEndOf="@+id/button7" />
-
-            <Button
-                android:id="@+id/button6"
-                style="@style/Widget.AppCompat.Button.Small"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/button5"
-                android:layout_alignBottom="@+id/button5"
-                android:layout_toEndOf="@+id/button5"
-                android:layout_toRightOf="@+id/button5"
-                android:minHeight="30dp"
-                android:minWidth="0dp"
-                android:text="Save"
-                android:textSize="10sp" />
-
-            <Button
-                android:id="@+id/button7"
-                style="@style/Widget.AppCompat.Button.Small"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:minHeight="30dp"
-                android:minWidth="0dp"
-                android:text="Back"
-                android:textSize="10sp"
-                android:layout_alignBaseline="@+id/button5"
-                android:layout_alignBottom="@+id/button5"
-                android:layout_alignLeft="@+id/textView20"
-                android:layout_alignStart="@+id/textView20" />
 
             <EditText
                 android:id="@+id/editText10"
@@ -148,6 +108,59 @@
                 android:ems="10"
                 android:inputType="textPassword"
                 android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/button00"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="25dp"
+                android:minWidth="0dp"
+                android:text="Back"
+                android:textSize="8sp"
+                android:layout_alignLeft="@+id/textView14"
+                android:layout_below="@+id/editText12" />
+
+            <Button
+                android:id="@+id/button01"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="25dp"
+                android:minWidth="0dp"
+                android:text="Reset"
+                android:textSize="8sp"
+                android:layout_below="@+id/editText12"
+                android:layout_toRightOf="@+id/button00"
+                android:layout_toEndOf="@+id/button00" />
+
+            <Button
+                android:id="@+id/button02"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText12"
+                android:layout_toEndOf="@+id/button01"
+                android:layout_toRightOf="@+id/button01"
+                android:minHeight="20dp"
+                android:minWidth="0dp"
+                android:text="Check"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/button03"
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText12"
+                android:layout_toEndOf="@+id/button02"
+                android:layout_toRightOf="@+id/button02"
+                android:minHeight="25dp"
+                android:minWidth="0dp"
+                android:text="Save"
+                android:textSize="8sp" />
+
+
 
         </RelativeLayout>
 
