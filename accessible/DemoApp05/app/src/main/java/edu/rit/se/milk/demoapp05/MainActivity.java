@@ -1,16 +1,17 @@
 package edu.rit.se.milk.demoapp05;
 
 import android.graphics.Color;
+import android.os.Build;
+import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.accessibility.AccessibilityManager;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 Date todayDate = today.getTime();
                 String todayDateString = new SimpleDateFormat("EEEE, MMMM d, yyyy").format(todayDate);
 
-                txtDisplay.setText("Today's Date: " + todayDateString);
+                provideMessage("Today's Date: " + todayDateString);
 
             }
         });
@@ -76,8 +77,34 @@ public class MainActivity extends AppCompatActivity {
                 Date todayDate = today.getTime();
                 String currentTimeString = new SimpleDateFormat("hh:mm:ss a").format(todayDate);
 
-                txtDisplay.setText("Current time: " + currentTimeString);
+                provideMessage("Current Time: " + currentTimeString);
             }
         });
+    }
+
+    private TextToSpeech textToSpeech;
+    private void provideMessage(final String message){
+        //For details on AccessibilityManager refer: https://developer.android.com/reference/android/view/accessibility/AccessibilityManager.html
+        //For details on TextToSpeech refer: https://developer.android.com/reference/android/speech/tts/TextToSpeech.html
+
+        AccessibilityManager accessibilityManager = (AccessibilityManager) getSystemService(ACCESSIBILITY_SERVICE);
+        boolean isAccessibilityEnabled = accessibilityManager.isEnabled();
+        boolean isExploreByTouchEnabled = accessibilityManager.isTouchExplorationEnabled();
+
+        if (isAccessibilityEnabled && isExploreByTouchEnabled){
+            textToSpeech = new TextToSpeech(MainActivity.this, new TextToSpeech.OnInitListener() {
+                @Override
+                public void onInit(int status) {
+                    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+                        textToSpeech.speak(message, TextToSpeech.QUEUE_FLUSH, null, null);
+                    }
+                    else{
+                        textToSpeech.speak(message, TextToSpeech.QUEUE_FLUSH, null);
+                    }
+                }
+            });
+        }
+
+        txtDisplay.setText(message);
     }
 }
