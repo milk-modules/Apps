@@ -1,0 +1,90 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:accessibilityLiveRegion="polite"
+    tools:context="edu.rit.se.milk.demoapp06.WeatherFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/layoutContents"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="381dp"
+                            android:layout_weight="66.30"
+                            android:background="@drawable/relative_layout_background">
+
+                            <ImageView
+                                android:id="@+id/imageView"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_margin="2dp"
+                                android:padding="2dp"
+                                app:srcCompat="@drawable/weather_icon_01" />
+
+                            <TextView
+                                android:id="@+id/textViewHigh"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/imageView"
+                                android:layout_alignStart="@+id/imageView"
+                                android:layout_alignTop="@+id/imageView"
+                                android:layout_marginLeft="13dp"
+                                android:layout_marginStart="13dp"
+                                android:layout_marginTop="20dp"
+                                android:clickable="false"
+                                android:importantForAccessibility="no"
+                                android:text="TextView" />
+
+                            <TextView
+                                android:id="@+id/textViewLow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/textViewHigh"
+                                android:layout_alignStart="@+id/textViewHigh"
+                                android:layout_below="@+id/textViewHigh"
+                                android:layout_marginTop="19dp"
+                                android:importantForAccessibility="no"
+                                android:text="TextView" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
