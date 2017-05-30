@@ -58,12 +58,12 @@ public class MainActivity extends AppCompatActivity implements WeatherFragment.O
                     public void run() {
                         todayWeather = (WeatherFragment)
                                 getSupportFragmentManager().findFragmentById(R.id.weather_fragment_today);
-                        todayWeather.generateRandomWeatherForecast("today");
+                        todayWeather.generateRandomWeatherForecast();
 
 
                         tomorrowWeather = (WeatherFragment)
                                 getSupportFragmentManager().findFragmentById(R.id.weather_fragment_tomorrow);
-                        tomorrowWeather.generateRandomWeatherForecast("tomorrow");
+                        tomorrowWeather.generateRandomWeatherForecast();
                     }
                 });
             }
