@@ -66,9 +66,6 @@
                         android:layout_weight="0.71"
                         android:ems="10"
                         android:inputType="textPersonName"
-                        android:nextFocusDown="@+id/listViewOrigin"
-                        android:nextFocusLeft="@+id/buttonSave"
-                        android:nextFocusRight="@+id/listViewOrigin"
                         />
 
                 </LinearLayout>
@@ -90,9 +87,7 @@
                         android:id="@+id/listViewOrigin"
                         android:layout_width="241dp"
                         android:layout_height="match_parent"
-                        android:entries="@array/country_origin"
-                        android:nextFocusLeft="@+id/editTextName"
-                        android:nextFocusRight="@+id/editTextQuantity"/>
+                        android:entries="@array/country_origin"/>
 
                 </LinearLayout>
 
@@ -115,11 +110,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.61"
                         android:ems="10"
-                        android:inputType="number"
-                        android:nextFocusRight="@+id/buttonCancel"
-                        android:nextFocusLeft="@+id/listViewOrigin"
-                        android:nextFocusUp="@+id/listViewOrigin"
-                        android:nextFocusDown="@+id/buttonCancel"/>
+                        android:inputType="number"/>
 
                 </LinearLayout>
 
@@ -134,22 +125,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Cancel"
-                        android:nextFocusRight="@+id/buttonSave"
-                        android:nextFocusUp="@+id/editTextQuantity"
-                        android:nextFocusLeft="@+id/editTextQuantity"
-                        android:nextFocusDown="@+id/buttonSave"/>
+                        android:text="Cancel"/>
 
                     <Button
                         android:id="@+id/buttonSave"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Save"
-                        android:nextFocusRight="@+id/editTextName"
-                        android:nextFocusUp="@+id/buttonCancel"
-                        android:nextFocusLeft="@+id/buttonCancel"
-                        android:nextFocusDown="@+id/editTextName"/>
+                        android:text="Save"/>
                 </LinearLayout>
 
             </LinearLayout>
