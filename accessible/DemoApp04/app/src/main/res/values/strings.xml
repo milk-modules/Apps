@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DemoApp04</string>
+    <string-array name="country_origin">
+        <item>Australia</item>
+        <item>Bulgaria</item>
+        <item>Cyprus</item>
+        <item>Marshall Islands</item>
+        <item>Sri Lanka</item>
+        <item>Thailand</item>
+        <item>United Kingdom</item>
+    </string-array>
+</resources>
