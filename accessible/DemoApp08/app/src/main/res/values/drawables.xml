@@ -1,0 +1,8 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_share" type="drawable">@android:drawable/ic_menu_share</item>
+    <item name="ic_menu_send" type="drawable">@android:drawable/ic_menu_send</item>
+    <item name="ic_menu_breaking" type="drawable">@android:drawable/star_on</item>
+    <item name="ic_menu_local" type="drawable">@android:drawable/ic_dialog_map</item>
+    <item name="ic_menu_world" type="drawable">@android:drawable/ic_menu_mapmode</item>
+    <item name="ic_menu_sport" type="drawable">@android:drawable/ic_menu_myplaces</item>
+</resources>
